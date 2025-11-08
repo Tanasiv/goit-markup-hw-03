@@ -181,6 +181,19 @@ a {
   text-align: left;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
 .one-list {
   display: flex;
   gap: 24px;
