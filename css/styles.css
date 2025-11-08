@@ -4,13 +4,52 @@ body {
   background-color: #ffffff;
 }
 
+/* reset */
+
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+/* common */
+
+.conteiner {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  max-height: 72px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -23,11 +62,24 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -38,9 +90,18 @@ a {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -57,11 +118,21 @@ a {
   color: #404bbf;
 }
 
+/* main */
+/* sectiom 1 */
+
 .page-section {
+  padding: 188px 0;
   background-color: #2e2f42;
 }
 
 .one-name {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
+  align-items: center;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -70,6 +141,14 @@ a {
 }
 
 .button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin: 0 auto;
+  border-radius: 4px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -87,7 +166,10 @@ a {
   text-align: center;
 }
 
+/* section 2 */
+
 .section-list {
+  padding: 120px 0;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -95,14 +177,13 @@ a {
   text-align: left;
 }
 
-.two-name {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-transform: capitalize;
+.twoname {
+  display: none;
+}
+
+.one-list {
+  display: flex;
+  gap: 24px;
 }
 
 .name-list {
@@ -122,6 +203,17 @@ a {
   color: #2e2f42;
 }
 
+.two-name {
+  padding-top: 120px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
 .text-list {
   font-size: 16px;
   line-height: 1.5;
@@ -129,7 +221,27 @@ a {
   color: #434455;
 }
 
+/* sectiom 3 */
+.section-team {
+  background: #f4f4fd;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding: 72px 0;
+  text-align: center;
+}
+
+.team-item {
+  min-height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
 .name-people {
+  padding-top: 32px;
   font-weight: 500;
   font-size: 20px;
   text-align: center;
@@ -138,22 +250,28 @@ a {
   letter-spacing: 0.02em;
 }
 
-.team-item {
-  background-color: #fff;
-  text-align: center;
-}
-
 .text-trade {
+  padding: 8px 0;
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
   color: #434455;
+  text-align: center;
 }
 
+/* section 4 */
 .portfolio {
   background-color: #fff;
   text-align: left;
   letter-spacing: 0.02em;
+}
+
+.our-portfolio {
+  display: flex;
+  padding: 72px 0;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .portfolio-name {
@@ -170,7 +288,11 @@ a {
   color: #434455;
 }
 
+/* footer */
+
 .page-footer {
+  max-height: 312px;
+  padding: 100px 0;
   background-color: #2e2f42;
 }
 
@@ -179,11 +301,17 @@ a {
 }
 
 .footer-text {
+  margin-top: 16px;
+  max-width: 264px;
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
 }
+
 .comment {
+  display: flex;
+  gap: 16px;
+  min-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
