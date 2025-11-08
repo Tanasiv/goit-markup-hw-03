@@ -223,6 +223,7 @@ a {
 
 /* sectiom 3 */
 .section-team {
+  display: block;
   background: #f4f4fd;
 }
 
@@ -261,6 +262,7 @@ a {
 
 /* section 4 */
 .portfolio {
+  display: block;
   background-color: #fff;
   text-align: left;
   letter-spacing: 0.02em;
