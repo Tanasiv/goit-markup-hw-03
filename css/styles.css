@@ -29,7 +29,7 @@ a {
 
 /* common */
 
-.conteiner {
+.container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -41,7 +41,7 @@ a {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-conteiner {
+.header-container {
   display: flex;
   align-items: center;
   max-height: 72px;
@@ -222,6 +222,10 @@ a {
 }
 
 /* sectiom 3 */
+img {
+  display: block;
+}
+
 .section-team {
   display: block;
   background: #f4f4fd;
