@@ -177,16 +177,18 @@ a {
   text-align: left;
 }
 
-.twoname {
+.twoname.visually-hidden {
   display: none;
 }
 
 .one-list {
+  calc((100% - 72px) / 4); 
   display: flex;
   gap: 24px;
 }
 
 .name-list {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -205,6 +207,7 @@ a {
 
 .two-name {
   padding-top: 120px;
+  margin-bottom: 72px
   font-weight: 500;
   font-size: 36px;
   line-height: 1.11;
@@ -222,12 +225,8 @@ a {
 }
 
 /* sectiom 3 */
-img {
-  display: block;
-}
 
 .section-team {
-  display: block;
   background: #f4f4fd;
 }
 
@@ -240,9 +239,16 @@ img {
 
 .team-item {
   min-height: 380px;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+}
+
+.div-name{
+  padding: 32px 0;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .name-people {
@@ -261,12 +267,10 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.5;
   color: #434455;
-  text-align: center;
 }
 
 /* section 4 */
 .portfolio {
-  display: block;
   background-color: #fff;
   text-align: left;
   letter-spacing: 0.02em;
