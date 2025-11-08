@@ -181,10 +181,6 @@ a {
   text-align: left;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 .one-list {
   display: flex;
   gap: 24px;
@@ -282,8 +278,7 @@ a {
 /* section 4 */
 .portfolio {
   background-color: #fff;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
   text-align: left;
   letter-spacing: 0.02em;
 }
@@ -293,7 +288,6 @@ a {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  flex-wrap: wrap;
   padding: 0;
   list-style: none;
 }
@@ -339,7 +333,7 @@ a {
   color: #f4f4fd;
 }
 
-.footer-logo {
+a {
   display: inline-block;
   margin-bottom: 16px;
 }
