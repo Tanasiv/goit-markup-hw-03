@@ -177,14 +177,18 @@ a {
   text-align: left;
 }
 
-.twoname.visually-hidden {
+.visually-hidden {
   display: none;
 }
 
 .one-list {
-  calc((100% - 72px) / 4); 
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+}
+
+.one-list li {
+  flex: 0 0 calc((100% - 3 * 24px) / 4); /* ширина кожного пункту */
 }
 
 .name-list {
@@ -202,19 +206,6 @@ a {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.two-name {
-  padding-top: 120px;
-  margin-bottom: 72px
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-transform: capitalize;
 }
 
 .text-list {
@@ -228,6 +219,18 @@ a {
 
 .section-team {
   background: #f4f4fd;
+}
+
+.two-name {
+  padding-top: 120px;
+  margin-bottom: 72px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
 }
 
 .team-list {
@@ -245,7 +248,7 @@ a {
   background: #fff;
 }
 
-.div-name{
+.div-name {
   padding: 32px 0;
   margin-bottom: 8px;
   text-align: center;
