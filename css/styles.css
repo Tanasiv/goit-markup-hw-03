@@ -48,6 +48,7 @@ a {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
@@ -56,6 +57,8 @@ a {
 }
 
 .logo {
+  display: block;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -66,6 +69,7 @@ a {
 }
 
 .header-logo {
+  margin-right: 76px;
   padding: 24px 0;
 }
 
@@ -346,11 +350,11 @@ a {
 }
 
 .logo {
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .footer-logo .logo-part {
+  display: inline-block;
+  margin-bottom: 16px;
   color: #f4f4fd;
 }
 
